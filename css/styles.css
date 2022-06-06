@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Piedra&family=Quicksand:wght@300;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Piedra', cursive;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+:root{
+    --white:hsl(0, 0%, 100%);
+    --light_gray:hsl(212, 45%, 89%);
+    --grayish_blue:hsl(220, 15%, 55%);
+    --dark_blue:hsl(218, 44%, 22%);
+}
+
+body{
+    background-color: var(--light_gray);
+}
+.container{
+    height: 100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center
+
+}
+.box{
+    border: 1px solid transparent;
+    width: 20%;
+    background-color: var(--white);
+    border-radius: 25px;
+}
+.box img{
+    width: 100%;
+    display: block;
+    margin:auto;
+    padding:8%;
+    border-radius: 50px;
+    
+}
+
+.box p{
+    color:black;
+    text-align: center;
+    padding: 4% 8%;
+    font-weight: bold;
+
+}
+.box .subtitle{
+    text-align: center;
+    font-size: 10px;
+    padding: 4% 8%; 
+    color:grey;
+    margin-bottom: 8%;
+}
+
+@media screen and (max-width: 576px){
+    .box{
+        width: 80%;
+    }
+    
+}
+
